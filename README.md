@@ -32,6 +32,12 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
                 <a href="#" class="app sm-app settings">
                     <span class="app-text">Settings</span>                    
                 </a>
+                
+# <h3>Adding a new app </h3>
+                <a href="#" class="app teal">....</a>
+                <a href="#" class="app blue">....</a>
+                <a href="#" class="app pink">....</a>
+                <a href="#" class="app lime">....</a>
 <h3>Installation</h3>
 
 Clone the repository
