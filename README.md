@@ -13,19 +13,19 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
 # <h2>Get started</h2>
 
 # <h3>Example of new ".column" class </h3>
-            <div class="column" id="column2">
-                <a href="#" class="app md-app events">
-                    <span class="app-text">Events</span>                      
-                </a><br />
-                <span class="app lg-app slider_bg">
-                    <span class="image-slider">
-                        <img src="images/image1.jpg" alt="image1" class="images" />
-                        <img......
-                        <img.......
-                    </span>
-                    <span class="image-caption">&#160; A day in the life</span>
-                </span>
-            </div>
+      <div class="column" id="column2">
+          <a href="#" class="app md-app events">
+              <span class="app-text">Events</span>                      
+          </a><br />
+          <span class="app lg-app slider_bg">
+              <span class="image-slider">
+                  <img src="images/image1.jpg" alt="image1" class="images" />
+                  <img......
+                  <img.......
+              </span>
+              <span class="image-caption">&#160; A day in the life</span>
+          </span>
+      </div>
             
      // Simplified example
             <div class="column">
