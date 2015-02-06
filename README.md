@@ -12,7 +12,7 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
 
 # <h2>Get started</h2>
 
-# <h3>Adding a new column with ".column" class </h3>
+# <h3>Example of new ".column" class </h3>
             <div class="column" id="column2">
                 <a href="#" class="app md-app events">
                     <span class="app-text">Events</span>                      
