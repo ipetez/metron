@@ -20,8 +20,8 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
                 <span class="app lg-app slider_bg">
                     <span class="image-slider">
                         <img src="images/image1.jpg" alt="image1" class="images" />
-                        <img src="images/macbook.jpg" alt="macbook" class="images" />
-                        <img src="images/image3.jpg" alt="image3" class="images" />
+                        <img......
+                        <img.......
                     </span>
                     <span class="image-caption">&#160; A day in the life</span>
                 </span>
