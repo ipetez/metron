@@ -28,9 +28,7 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
       </div>
             
     // Simplified example
-      <div class="column">
-        ....
-      </div
+      <div class="column">....</div
 
 # <h3>Adding a new app </h3>
 
