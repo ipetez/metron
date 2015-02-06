@@ -62,6 +62,13 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
       <span class="app linkedin">
         ......
       </span>
+
+# <h3>Adding new portfolio item </h3>
+      <div class="portfolio-item">
+          <img src="images/hologram.jpg" alt="portfolio item" class="portfolioSelect" />
+          <a><span class="itemsTitle">Lorem Ipsum <br /><img src="images/search2.png"
+           alt="Search Portfolio" class="portfolioSearch" /></span></a>
+      </div>
 <h3>Installation</h3>
 
 Clone the repository
