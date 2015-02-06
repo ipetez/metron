@@ -46,8 +46,19 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
 # <h3>Customizing app colors </h3>
                 <a href="#" class="app teal">....</a>
                 <a href="#" class="app blue">....</a>
-                <a href="#" class="app pink">....</a>
-                <a href="#" class="app lime">....</a>
+                <a href="#" class="app purple">....</a>
+                <a href="#" class="app orange">....</a>
+                
+# <h3>Choosing app sizes </h3>
+                <span class="app fb-blue">
+                  ......
+                </span>
+                <span class="app twitter-blue">
+                  ......
+                </span>
+                <span class="app linkedin">
+                  ......
+                </span>
 <h3>Installation</h3>
 
 Clone the repository
