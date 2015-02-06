@@ -69,6 +69,13 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
           <a><span class="itemsTitle">Lorem Ipsum <br /><img src="images/search2.png"
            alt="Search Portfolio" class="portfolioSearch" /></span></a>
       </div>
+      
+# <h3>Adding new services </h3>
+        <div class="aboutServices">
+            <img src="images/web_support.jpg" />
+            <h2>Web Support</h2>
+            <p>....</p>
+        </div>
 <h3>Installation</h3>
 
 Clone the repository
