@@ -1,5 +1,5 @@
 # Metron
-Windows 8.1 Inspired interactive web application that comes with some of the most distinct features on the operating system, including user's ability to change theme colors, backgrounds, update account picture and more. This could be great for a personal website,commercial advertising, blog etc.
+Windows 8.1 Inspired interactive web application that comes with some of the most distinct features on the operating system, including user's ability to interact with the UI, change theme colors, backgrounds, update account picture and more. This could be great for a personal website,commercial advertising, blog etc.
 ![Alt text](/images/metron.png?raw=true "Metron screenshot")
 # <h2>Features</h2>
 <ul>
