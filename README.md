@@ -78,4 +78,4 @@ Windows 8.1 Inspired interactive web application that comes with some of the mos
 
 Clone the repository
 
-<div>$ git clone git@github.com:ipeters90/windows_inspired.git <br>$ cd metron</div>
+<div>$ git clone https://github.com/ipeters90/metron.git <br>$ cd metron</div>
