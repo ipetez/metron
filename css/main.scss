@@ -132,6 +132,12 @@
         &:hover {
             background: #f2f2f2;
         }
+        a {
+            text-decoration: none;
+            cursor: default;
+            display: block;
+            color: #000;
+        }
     }
 
 }

@@ -118,6 +118,11 @@
     padding-left: 18px; }
     #profile_modal ul li:hover {
       background: #f2f2f2; }
+    #profile_modal ul li a {
+      text-decoration: none;
+      cursor: default;
+      display: block;
+      color: #000; }
 
 #profile_modal.show {
   display: block; }

@@ -44,38 +44,9 @@ $(document).ready(function() {
 
     });
     
-    $('.purple').click(function() {
-        $('#main_wrapper').css('background', '#5133AB');
-        $('#menu').css('background', '#3E248C');
-    });
-    $('.lime').click(function() {
-        $('#main_wrapper').css('background', '#8CBF26');
-        $('#menu').css('background', '#759C27');
-    });
-    $('.blue').click(function() {
-        $('#main_wrapper').css('background', '#2672EC');
-        $('#menu').css('background', '#2462C7');
-    });
-    $('.pink').click(function() {
-        $('#main_wrapper').css('background', '#C1004F');
-        $('#menu').css('background', '#A30747');
-    });
-    $('.aurora').click(function() {
-        $('#main_wrapper').css("background", "url(images/aurora.jpg)");
-        $('#menu').css('background', '#2B2A2A');
-    });
-    $('.canal_rocks').click(function() {
-        $('#main_wrapper').css("background", "url(images/canal_rocks.jpg)");
-        $('#menu').css('background', '#2B2A2A');
-    });
-    $('.mechanical').click(function() {
-        $('#main_wrapper').css("background", "url(images/mechanical.jpg)");
-        $('#menu').css('background', '#2B2A2A');
-    });
-    $('.butterfly').click(function() {
-        $('#main_wrapper').css("background", "url(images/butterfly.jpg)");
-        $('#menu').css('background', '#2B2A2A');
-    });
+    $('.bkg').click(function(e) {
+        changeBkg(e);
+    })
        
     
 //Profile button configurations  
@@ -116,14 +87,8 @@ $(document).ready(function() {
         $('#profile_modal').removeClass('show');    
     });
     $('#profile_modal ul li:first-child').click(function() {
-        $('#imgInp').click();    
+        $('#imgInp').trigger("click");   
     });
-    $('#profile_modal ul li:nth-child(2)').click(function() {
-        document.location.href = "about.html";    
-    });
-    $('#profile_modal ul li:nth-child(3)').click(function() {
-        document.location.href = "services.html";    
-    }); 
     $('#profile_modal ul li:last-child').click(function() {
         location.reload();    
     });
@@ -139,59 +104,45 @@ $(document).ready(function() {
     
 }); // End Document Ready
 
-            //Outside native JS functions
-            
-// Quote rotator
+
+// Self invoking functions
 (function() {
 
     var quotes = $(".quote");
     var quoteIndex = -1;
+    var clients = $(".client");
+    var clientIndex = -1;
+    var images = $(".images");
+    var imgIndex = -1;
 
+    // Motivation quotes slider
     function showNextQuote() {
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
             .fadeIn(700)
             .delay(4000)
-            .fadeOut(700, showNextQuote);
+            .fadeOut(800, showNextQuote);
     }
 
-    showNextQuote();
-
-})();
-
-// Sample client info slider
-(function() {
-
-    var quotes = $(".client");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
+    // Sample client info slider
+    function showNextClient() {
+        ++clientIndex;
+        clients.eq(clientIndex % clients.length)
+            .fadeIn(800)
+            .delay(4500)
+            .fadeOut(700, showNextClient);
+    }
+    //Sample image slider
+    function showNextImg() {
+        ++imgIndex;
+        images.eq(imgIndex % images.length)
             .fadeIn(700)
-            .delay(5000)
-            .fadeOut(700, showNextQuote);
+            .delay(4000)
+            .fadeOut(700, showNextImg);
     }
-
     showNextQuote();
-
-})();
-
-//Sample image slider
-(function() {
-
-    var quotes = $(".images");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(0)
-            .delay(6000)
-            .fadeOut(0, showNextQuote);
-    }
-
-    showNextQuote();
+    showNextClient();
+    showNextImg();
 
 })();
 
@@ -212,5 +163,35 @@ function goBack() {
     window.history.back()
 }
 
+// All colors needed for theming
+var colors = {
+    "purple": ["#5133AB", "#3E248C"],
+    "lime": ["#8CBF26", "#759C27"],
+    "blue": ["#2672EC", "#2462C7"],
+    "pink": ["#C1004F", "#A30747"],
+    "orange": ["#FF981D", ""],
+    "light-purp": ["#AA00FF", ""],
+    "dkgray": "#2B2A2A"
+}
 
-
+// Change theme backgrounds
+function changeBkg(el) {
+    var mainWrapper = document.getElementById("main_wrapper"), 
+    menu = document.getElementById("menu"),
+    color, img;
+    try {
+        // Checks to see if it's a color background and an not image
+        if(el.currentTarget.classList.contains("color_bkg")) {
+            color = el.currentTarget.id;
+            mainWrapper.style.background = colors[color][0];
+            menu.style.background = colors[color][1];
+        } else {
+            // first class name has to be same and the image file name
+            img = el.currentTarget.classList[0]
+            mainWrapper.style.background = "url(images/"+img+".jpg)";
+            menu.style.background = colors["dkgray"];
+        }
+    } catch(err) {
+        console.log(err.message);
+    }
+}
